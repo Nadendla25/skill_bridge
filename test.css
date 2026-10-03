@@ -1,0 +1,468 @@
+
+/* ==========================================
+   TEST PAGE
+========================================== */
+
+.test-page {
+    min-height: 100vh;
+    padding: 80px 8%;
+    background: #ffffff;
+}
+
+
+/* ==========================================
+   TEST HEADER
+========================================== */
+
+.test-header {
+    max-width: 800px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.page-label {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #777777;
+}
+
+.test-header h1 {
+    margin-bottom: 15px;
+    font-size: 42px;
+    font-weight: 700;
+    color: #111111;
+}
+
+.test-header p {
+    max-width: 650px;
+    margin: auto;
+    color: #666666;
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   TEST INFORMATION
+========================================== */
+
+.test-info {
+    max-width: 1000px;
+    margin: 0 auto 35px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    border: 1px solid #e5e5e5;
+    background: #ffffff;
+}
+
+.info-item {
+    padding: 22px;
+    text-align: center;
+    border-right: 1px solid #e5e5e5;
+}
+
+.info-item:last-child {
+    border-right: none;
+}
+
+.info-item span {
+    display: block;
+    margin-bottom: 8px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #888888;
+}
+
+.info-item strong {
+    font-size: 16px;
+    color: #111111;
+}
+
+
+/* ==========================================
+   INSTRUCTIONS
+========================================== */
+
+.instructions {
+    max-width: 1000px;
+    margin: 0 auto 35px;
+    padding: 25px;
+
+    border: 1px solid #e5e5e5;
+    background: #fafafa;
+}
+
+.instructions-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 15px;
+}
+
+.instructions-heading h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #111111;
+}
+
+.instruction-icon {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: #111111;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.instructions ul {
+    margin: 0;
+    padding-left: 40px;
+}
+
+.instructions li {
+    margin-bottom: 8px;
+    color: #666666;
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   TEST CONTAINER
+========================================== */
+
+.test-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* ==========================================
+   QUESTION CARD
+========================================== */
+
+.question-card {
+    margin-bottom: 25px;
+    padding: 30px;
+
+    border: 1px solid #e5e5e5;
+    background: #ffffff;
+
+    transition: 0.2s ease;
+}
+
+.question-card:hover {
+    border-color: #cccccc;
+}
+
+
+/* ==========================================
+   QUESTION TOP
+========================================== */
+
+.question-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+}
+
+.question-number {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #111111;
+}
+
+.question-marks {
+    font-size: 11px;
+    color: #888888;
+}
+
+
+/* ==========================================
+   TECHNOLOGY TAG
+========================================== */
+
+.technology-tag {
+    display: inline-block;
+
+    margin-bottom: 14px;
+    padding: 5px 9px;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+
+    background: #fafafa;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+
+    color: #777777;
+}
+
+
+/* ==========================================
+   QUESTION TEXT
+========================================== */
+
+.question-card h2 {
+    margin: 0 0 10px;
+
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 600;
+
+    color: #111111;
+}
+
+.question-description {
+    margin: 0 0 22px;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: #777777;
+}
+
+
+/* ==========================================
+   OPTIONS
+========================================== */
+
+.options {
+    display: grid;
+    gap: 10px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 15px;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+    color: #444444;
+
+    transition: 0.2s ease;
+}
+
+.option:hover {
+    border-color: #111111;
+    background: #fafafa;
+}
+
+.option input {
+    width: 16px;
+    height: 16px;
+
+    accent-color: #111111;
+
+    cursor: pointer;
+}
+
+.option span {
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   PROGRESS
+========================================== */
+
+.test-progress {
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    color: #777777;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background: #eeeeee;
+}
+
+.progress-fill {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+
+    background: #111111;
+}
+
+
+/* ==========================================
+   SUBMIT BUTTON
+========================================== */
+
+.submit-test {
+    display: block;
+
+    width: 100%;
+    padding: 16px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #111111;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.submit-test:hover {
+    background: #333333;
+}
+
+.submit-note {
+    margin-top: 12px;
+
+    text-align: center;
+
+    font-size: 12px;
+    color: #888888;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 800px) {
+
+    .test-page {
+        padding: 60px 5%;
+    }
+
+    .test-header h1 {
+        font-size: 34px;
+    }
+
+    .test-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .info-item:nth-child(-n+2) {
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .question-card {
+        padding: 22px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .test-page {
+        padding: 45px 20px;
+    }
+
+    .test-header h1 {
+        font-size: 30px;
+    }
+
+    .test-header p {
+        font-size: 14px;
+    }
+
+    .test-info {
+        grid-template-columns: 1fr;
+    }
+
+    .info-item {
+        border-right: none;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .info-item:last-child {
+        border-bottom: none;
+    }
+
+    .question-card h2 {
+        font-size: 17px;
+    }
+
+    .option {
+        padding: 13px;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .test-page {
+        padding: 35px 15px;
+    }
+
+    .test-header h1 {
+        font-size: 26px;
+    }
+
+    .question-card {
+        padding: 18px;
+    }
+
+    .question-top {
+        align-items: flex-start;
+    }
+
+    .instructions {
+        padding: 20px;
+    }
+
+}

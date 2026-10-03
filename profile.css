@@ -1,0 +1,572 @@
+/* ==========================================
+   SKILLBRIDGE - PROFILE PAGE
+========================================== */
+
+
+/* ==========================================
+   GLOBAL
+========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f8f9fc;
+    color: #111827;
+}
+
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar {
+    position: relative;
+
+    width: 100%;
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 6%;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+/* ==========================================
+   LEFT NAVIGATION
+========================================== */
+
+.nav-left {
+    display: flex;
+    align-items: center;
+
+    gap: 28px;
+
+    width: 40%;
+}
+
+
+/* ==========================================
+   RIGHT NAVIGATION
+========================================== */
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 28px;
+
+    width: 40%;
+}
+
+
+/* ==========================================
+   NAVIGATION LINKS
+========================================== */
+
+.nav-left a,
+.nav-right a {
+    color: #4b5563;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+    color: #111827;
+}
+
+
+/* ==========================================
+   CENTER LOGO
+========================================== */
+
+.logo {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    color: #111827;
+
+    font-size: 23px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* ==========================================
+   PROFILE PAGE
+========================================== */
+
+.profile-page {
+    min-height: calc(100vh - 70px);
+
+    padding: 70px 8% 80px;
+}
+
+
+/* ==========================================
+   PROFILE HEADER
+========================================== */
+
+.profile-header {
+    max-width: 720px;
+
+    margin: 0 auto 42px;
+
+    text-align: center;
+}
+
+
+.profile-label {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: #6366f1;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.profile-header h1 {
+    margin: 0 0 13px;
+
+    color: #111827;
+
+    font-size: 40px;
+    font-weight: 700;
+
+    line-height: 1.2;
+}
+
+
+.profile-header p {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    color: #6b7280;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   PROFILE CARD
+========================================== */
+
+.profile-card {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 16px;
+
+    box-shadow: 0 8px 30px rgba(17, 24, 39, 0.06);
+}
+
+
+/* ==========================================
+   PROFILE TOP
+========================================== */
+
+.profile-top {
+    display: flex;
+    align-items: center;
+
+    gap: 24px;
+
+    padding: 34px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+/* ==========================================
+   PROFILE AVATAR
+========================================== */
+
+.profile-avatar {
+    width: 82px;
+    height: 82px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #111827;
+    color: #ffffff;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    box-shadow: 0 6px 18px rgba(17, 24, 39, 0.14);
+}
+
+
+/* ==========================================
+   PROFILE DETAILS
+========================================== */
+
+.profile-details h2 {
+    margin: 0 0 7px;
+
+    color: #111827;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.profile-details p {
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   PROFILE STATS
+========================================== */
+
+.profile-stats {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* ==========================================
+   SINGLE STAT
+========================================== */
+
+.profile-stat {
+    padding: 30px 20px;
+
+    text-align: center;
+
+    border-right: 1px solid #e5e7eb;
+}
+
+
+.profile-stat:last-child {
+    border-right: none;
+}
+
+
+/* ==========================================
+   STAT VALUE
+========================================== */
+
+.profile-stat h3 {
+    margin: 0 0 8px;
+
+    color: #111827;
+
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+/* ==========================================
+   STAT LABEL
+========================================== */
+
+.profile-stat p {
+    margin: 0;
+
+    color: #9ca3af;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* ==========================================
+   PROFILE ACTIONS
+========================================== */
+
+.profile-actions {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 28px;
+}
+
+
+/* ==========================================
+   ACTION BUTTON
+========================================== */
+
+.profile-action-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 130px;
+
+    padding: 12px 22px;
+
+    border: 1px solid #111827;
+
+    border-radius: 8px;
+
+    background: #111827;
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.profile-action-btn:hover {
+    background: #374151;
+
+    border-color: #374151;
+
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   SECONDARY BUTTON
+========================================== */
+
+.profile-action-btn.secondary {
+    background: #ffffff;
+
+    color: #111827;
+}
+
+
+.profile-action-btn.secondary:hover {
+    background: #f3f4f6;
+
+    border-color: #d1d5db;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 4%;
+    }
+
+    .nav-left,
+    .nav-right {
+        gap: 18px;
+    }
+
+    .profile-page {
+        padding: 55px 5% 70px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        min-height: auto;
+
+        padding: 16px 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .logo {
+        position: static;
+
+        transform: none;
+
+        order: -1;
+
+        font-size: 21px;
+    }
+
+
+    .nav-left,
+    .nav-right {
+        width: 100%;
+
+        justify-content: center;
+
+        gap: 16px;
+    }
+
+
+    .nav-left a,
+    .nav-right a {
+        font-size: 12px;
+    }
+
+
+    .profile-page {
+        padding: 45px 20px 60px;
+    }
+
+
+    .profile-header h1 {
+        font-size: 32px;
+    }
+
+
+    .profile-header p {
+        font-size: 14px;
+    }
+
+
+    .profile-top {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 30px 20px;
+    }
+
+
+    .profile-avatar {
+        width: 76px;
+        height: 76px;
+
+        font-size: 25px;
+    }
+
+
+    .profile-details h2 {
+        font-size: 21px;
+    }
+
+
+    .profile-stats {
+        grid-template-columns: 1fr;
+    }
+
+
+    .profile-stat {
+        border-right: none;
+
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+
+    .profile-stat:last-child {
+        border-bottom: none;
+    }
+
+
+    .profile-actions {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+
+    .profile-action-btn {
+        width: 100%;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 450px) {
+
+    .profile-page {
+        padding: 35px 15px 50px;
+    }
+
+
+    .nav-left,
+    .nav-right {
+        gap: 10px;
+    }
+
+
+    .nav-left a,
+    .nav-right a {
+        font-size: 11px;
+    }
+
+
+    .profile-header h1 {
+        font-size: 27px;
+    }
+
+
+    .profile-card {
+        border-radius: 12px;
+    }
+
+}

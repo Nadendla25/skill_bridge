@@ -1,0 +1,520 @@
+
+/* =========================================
+   SKILLBRIDGE ROADMAPS - COMPLETE STYLES
+   ========================================= */
+
+:root {
+  --primary: #635bdb;
+  --primary-dark: #4b42bd;
+  --purple-light: #f0edff;
+  --text: #1e2540;
+  --muted: #68738b;
+  --page: #f6f7ff;
+  --white: #ffffff;
+  --border: #e6e8f3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--text);
+  background: var(--page);
+  line-height: 1.65;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* NAVBAR */
+
+.main-navbar {
+  width: 100%;
+  min-height: 88px;
+  padding: 16px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 4px 18px rgba(38, 43, 85, 0.05);
+}
+
+.brand-logo {
+  flex-shrink: 0;
+  color: var(--primary);
+  font-size: clamp(30px, 3vw, 40px);
+  font-weight: 850;
+  letter-spacing: -1.7px;
+  line-height: 1.2;
+}
+
+.brand-logo span {
+  color: #f16c9b;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.nav-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 16px;
+  color: #424a64;
+  border: 1px solid transparent;
+  border-radius: 11px;
+  font-size: 15px;
+  font-weight: 650;
+  transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+  background: var(--purple-light);
+  border-color: #e2ddff;
+}
+
+.nav-links .profile-link {
+  margin-left: 4px;
+  padding: 12px 19px;
+  color: white;
+  background: linear-gradient(135deg, #7563f4, #5545d3);
+  box-shadow: 0 5px 14px rgba(99, 91, 219, 0.2);
+}
+
+.nav-links .profile-link:hover {
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* HERO */
+
+.hero {
+  padding: 78px 20px 75px;
+  text-align: center;
+  background:
+    radial-gradient(
+      circle at 12% 15%,
+      rgba(193, 181, 255, 0.42),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 88% 25%,
+      rgba(168, 213, 255, 0.42),
+      transparent 35%
+    ),
+    linear-gradient(135deg, #f3f0ff, #eff7ff 65%, #fff2f8);
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 9px 18px;
+  color: #5747d1;
+  background: #e9e5ff;
+  border: 1px solid #dcd5ff;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.hero h1 {
+  max-width: 950px;
+  margin: 10px auto 20px;
+  font-size: clamp(36px, 5vw, 58px);
+  font-weight: 850;
+  line-height: 1.15;
+  letter-spacing: -1.8px;
+}
+
+.hero h1 span {
+  color: var(--primary);
+}
+
+.hero p {
+  max-width: 730px;
+  margin: 0 auto 28px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 24px;
+  color: white;
+  background: linear-gradient(135deg, #7563f4, #5545d3);
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 0 6px 17px rgba(99, 91, 219, 0.23);
+  transition: 0.2s ease;
+}
+
+.primary-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 23px rgba(99, 91, 219, 0.3);
+}
+
+/* SECTION INTRO */
+
+.roadmaps-section {
+  padding: 58px 0 25px;
+}
+
+.section-heading {
+  padding: 0 20px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.section-heading .eyebrow {
+  margin-bottom: 8px;
+}
+
+.section-heading h2 {
+  margin: 8px 0 10px;
+  font-size: clamp(28px, 3vw, 38px);
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.section-heading p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+/* FILTER BUTTONS */
+
+.filters {
+  width: min(1180px, 92%);
+  margin: 0 auto 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 10px 17px;
+  color: #4a526c;
+  background: white;
+  border: 1px solid #e0e3f0;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 650;
+  box-shadow: 0 2px 7px rgba(35, 43, 80, 0.03);
+  transition: 0.2s ease;
+}
+
+.filter-btn:hover {
+  color: var(--primary);
+  background: #f2efff;
+  border-color: #d5ceff;
+  transform: translateY(-1px);
+}
+
+.filter-btn.active {
+  color: white;
+  background: var(--primary);
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(99, 91, 219, 0.2);
+}
+
+/* ROADMAP GRID */
+
+.roadmap-grid {
+  width: min(1180px, 90%);
+  margin: 0 auto 65px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 24px;
+}
+
+/* CARDS */
+
+.roadmap-card {
+  min-width: 0;
+  padding: 25px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 19px;
+  box-shadow: 0 5px 22px rgba(37, 44, 90, 0.055);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.roadmap-card:hover {
+  transform: translateY(-5px);
+  border-color: #d4ceff;
+  box-shadow: 0 14px 30px rgba(50, 50, 110, 0.11);
+}
+
+.card-icon {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  font-size: 26px;
+}
+
+.card-icon.purple {
+  background: #efebff;
+}
+
+.card-icon.blue {
+  background: #e7f2ff;
+}
+
+.card-icon.orange {
+  background: #fff0df;
+}
+
+.card-icon.red {
+  background: #ffe9ed;
+}
+
+.card-icon.pink {
+  background: #ffeafa;
+}
+
+.card-icon.green {
+  background: #e4f8ee;
+}
+
+.card-label {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--primary);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.roadmap-card h3 {
+  margin: 0 0 12px;
+  color: #252b49;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.roadmap-card > p {
+  min-height: 78px;
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* ROADMAP STAGES */
+
+.roadmap-steps {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+  margin: 0 0 20px;
+}
+
+.roadmap-steps span {
+  display: block;
+  padding: 9px 10px;
+  color: #5145b5;
+  background: #f3f1ff;
+  border: 1px solid #eae6ff;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 650;
+  text-align: center;
+}
+
+/* CARD BUTTON */
+
+.card-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 11px 16px;
+  color: white;
+  background: linear-gradient(135deg, #7563f4, #5545d3);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.card-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(99, 91, 219, 0.2);
+}
+
+/* TOPIC DETAILS */
+
+.topic-details {
+  margin-top: 18px;
+  padding: 16px;
+  background: #f8f8ff;
+  border: 1px solid #ecebfa;
+  border-radius: 12px;
+}
+
+.topic-details strong {
+  color: #38345f;
+  font-size: 14px;
+}
+
+.topic-details ul {
+  margin: 12px 0 0;
+  padding-left: 19px;
+}
+
+.topic-details li {
+  margin-bottom: 8px;
+  color: #606b83;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.topic-details li:last-child {
+  margin-bottom: 0;
+}
+
+/* FOOTER */
+
+.site-footer {
+  padding: 35px 20px;
+  color: #e9eaff;
+  background: #202541;
+  text-align: center;
+}
+
+.footer-brand {
+  color: white;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+}
+
+.site-footer p {
+  margin: 7px 0;
+  color: #c4c8e1;
+}
+
+.site-footer small {
+  color: #aeb5d0;
+  font-size: 12px;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+  .roadmap-grid {
+    width: 92%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .main-navbar {
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .main-navbar {
+    padding: 18px 5%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .brand-logo {
+    font-size: 32px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+
+  .nav-links a {
+    padding: 9px 10px;
+    font-size: 13px;
+  }
+
+  .hero {
+    padding: 52px 18px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+    letter-spacing: -1px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .roadmaps-section {
+    padding-top: 40px;
+  }
+
+  .filters {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    padding: 9px 12px;
+    font-size: 12px;
+  }
+
+  .roadmap-grid {
+    width: 92%;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 17px;
+  }
+
+  .roadmap-card {
+    padding: 22px;
+  }
+
+  .roadmap-card > p {
+    min-height: auto;
+  }
+}

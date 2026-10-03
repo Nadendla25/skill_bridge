@@ -1,0 +1,290 @@
+
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f9fc;
+    color: #111827;
+    min-height: 100vh;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    min-height: 70px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: 700;
+    color: #111827;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #4b5563;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #6366f1;
+}
+
+
+/* RESULT CONTAINER */
+
+.result-container {
+    width: 90%;
+    max-width: 580px;
+    margin: 55px auto;
+    padding: 38px 42px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 10px 35px rgba(17, 24, 39, 0.06);
+}
+
+
+/* SUCCESS ICON */
+
+.result-icon {
+    width: 54px;
+    height: 54px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #ecfdf5;
+    color: #059669;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+/* HEADING */
+
+.result-label {
+    margin-bottom: 10px;
+    color: #6366f1;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.result-container h1 {
+    margin-bottom: 12px;
+    font-size: 34px;
+    color: #111827;
+}
+
+.result-description {
+    margin-bottom: 28px;
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* SCORE CARD */
+
+.score-card {
+    padding: 25px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 13px;
+}
+
+.score-heading {
+    margin-bottom: 10px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.score-card h2 {
+    margin-bottom: 18px;
+    color: #111827;
+    font-size: 45px;
+}
+
+.score-card h2 span {
+    color: #9ca3af;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+
+/* PROGRESS BAR */
+
+.progress-track {
+    height: 8px;
+    overflow: hidden;
+    background: #e5e7eb;
+    border-radius: 20px;
+}
+
+.progress-fill {
+    width: 80%;
+    height: 100%;
+    background: #6366f1;
+    border-radius: 20px;
+}
+
+.percentage {
+    margin-top: 14px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.percentage strong {
+    color: #111827;
+}
+
+
+/* FEEDBACK */
+
+.feedback {
+    margin: 24px 0;
+    padding: 17px;
+    text-align: left;
+    background: #f5f3ff;
+    border-left: 3px solid #6366f1;
+    border-radius: 7px;
+}
+
+.feedback h3 {
+    margin-bottom: 7px;
+    color: #3730a3;
+    font-size: 15px;
+}
+
+.feedback p {
+    color: #5b556b;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* BUTTONS */
+
+.result-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.continue-btn,
+.retry-btn {
+    width: 100%;
+    max-width: 280px;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.continue-btn {
+    gap: 10px;
+    background: #111827;
+    color: #ffffff;
+}
+
+.continue-btn:hover {
+    background: #374151;
+    transform: translateY(-2px);
+}
+
+.continue-btn span {
+    font-size: 18px;
+}
+
+.retry-btn {
+    background: #ffffff;
+    color: #111827;
+    border: 1px solid #d1d5db;
+}
+
+.retry-btn:hover {
+    background: #f3f4f6;
+    border-color: #9ca3af;
+}
+
+.profile-link {
+    margin-top: 3px;
+    color: #6366f1;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.profile-link:hover {
+    text-decoration: underline;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 16px 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .result-container {
+        width: 92%;
+        margin: 35px auto;
+        padding: 30px 20px;
+    }
+
+    .result-container h1 {
+        font-size: 29px;
+    }
+
+    .score-card {
+        padding: 22px 17px;
+    }
+
+    .score-card h2 {
+        font-size: 40px;
+    }
+
+}
+

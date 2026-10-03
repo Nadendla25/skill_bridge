@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkillBridge - Home</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">SkillBridge<span>.</span></a>
+
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="technology.html">Technologies</a>
+            <a href="projects.html">Projects</a>
+            <a href="roadmaps.html">Roadmap</a>
+            <a href="profile.html">Profile</a>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <main class="home-container">
+
+        <section class="home-content">
+            <p class="home-label">WELCOME TO SKILLBRIDGE</p>
+
+            <h1>
+                Learn Skills.<br>
+                Build Projects.<br>
+                <span>Shape Your Future.</span>
+            </h1>
+
+            <p class="home-description">
+                Your learning journey starts here. Explore technology
+                notes, practise questions, follow roadmaps, prepare for
+                interviews and build real-world projects — all in one place.
+            </p>
+
+            <div class="home-buttons">
+                <a href="technology.html" class="primary-btn">
+                    Start Learning <span>→</span>
+                </a>
+
+                <a href="projects.html" class="secondary-btn">
+                    Explore Projects
+                </a>
+            </div>
+
+            <div class="home-features">
+                <div class="feature">
+                    <h3>11+</h3>
+                    <p>Learning Topics</p>
+                </div>
+
+                <div class="feature">
+                    <h3>24+</h3>
+                    <p>Project Ideas</p>
+                </div>
+
+                <div class="feature">
+                    <h3>1</h3>
+                    <p>Learning Platform</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- RIGHT LEARNING CARD -->
+        <section class="home-card">
+            <div class="card-icon">✦</div>
+
+            <p class="card-label">YOUR LEARNING SPACE</p>
+            <h2>Grow Every Day</h2>
+
+            <p class="card-description">
+                Small steps every day lead to big achievements.
+                Learn at your own pace and keep moving forward.
+            </p>
+
+            <div class="learning-list">
+                <div><span>✓</span> Technology Notes</div>
+                <div><span>✓</span> Practice Questions</div>
+                <div><span>✓</span> Learning Roadmaps</div>
+                <div><span>✓</span> Real-World Projects</div>
+                <div><span>✓</span> AI Learning Assistant</div>
+            </div>
+
+            <a href="roadmaps.html" class="roadmap-link">
+                Explore Your Roadmap →
+            </a>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 SkillBridge. Learn. Practise. Grow.</p>
+    </footer>
+
+    <!-- FLOATING AI BUTTON -->
+    <button
+        type="button"
+        id="ai-toggle"
+        class="ai-toggle"
+        aria-label="Open SkillBridge AI Assistant"
+        aria-controls="ai-window"
+        aria-expanded="false">
+        ✦
+    </button>
+
+    <!-- AI CHAT WINDOW -->
+    <section class="ai-window" id="ai-window" aria-label="SkillBridge AI Assistant" hidden>
+
+        <div class="ai-header">
+            <div class="ai-heading">
+                <div class="ai-avatar">✦</div>
+                <div>
+                    <h3>SkillBridge AI</h3>
+                    <p>Your personal learning assistant</p>
+                </div>
+            </div>
+
+            <button type="button" id="ai-close" class="ai-close"
+                    aria-label="Close chat">×</button>
+        </div>
+
+        <div class="ai-messages" id="ai-messages" aria-live="polite">
+            <div class="ai-welcome" id="ai-welcome">
+                <div class="ai-welcome-icon">👋</div>
+                <h3>Hey, learner!</h3>
+                <p>
+                    Welcome to SkillBridge! Ask questions about coding,
+                    AI, roadmaps, or projects.
+                </p>
+
+                <div class="ai-suggestions">
+                    <button type="button" data-question="Give me a Python learning roadmap">
+                        🐍 Python Roadmap
+                    </button>
+
+                    <button type="button" data-question="Explain AI and Machine Learning basics">
+                        🧠 Learn AI/ML
+                    </button>
+
+                    <button type="button" data-question="Suggest beginner-friendly technology projects">
+                        💡 Project Ideas
+                    </button>
+
+                    <button type="button" data-question="Help me prepare for a technical interview">
+                        🎯 Interview Preparation
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <form class="ai-form" id="ai-form">
+            <input
+                type="text"
+                id="ai-input"
+                placeholder="Ask your learning question..."
+                autocomplete="off"
+                required>
+
+            <button type="submit" aria-label="Send message">➤</button>
+        </form>
+
+        <p class="ai-note">Learn something new every day 💜</p>
+    </section>
+
+    <!-- AI CHAT JAVASCRIPT -->
+    <script>
+        const aiToggle = document.getElementById("ai-toggle");
+        const aiWindow = document.getElementById("ai-window");
+        const aiClose = document.getElementById("ai-close");
+        const aiForm = document.getElementById("ai-form");
+        const aiInput = document.getElementById("ai-input");
+        const aiMessages = document.getElementById("ai-messages");
+        const aiWelcome = document.getElementById("ai-welcome");
+
+        function openAIChat() {
+            aiWindow.hidden = false;
+            aiToggle.setAttribute("aria-expanded", "true");
+            aiInput.focus();
+        }
+
+        function closeAIChat() {
+            aiWindow.hidden = true;
+            aiToggle.setAttribute("aria-expanded", "false");
+            aiToggle.focus();
+        }
+
+        aiToggle.addEventListener("click", () => {
+            if (aiWindow.hidden) {
+                openAIChat();
+            } else {
+                closeAIChat();
+            }
+        });
+
+        aiClose.addEventListener("click", closeAIChat);
+
+        function addAIMessage(text, type) {
+            const message = document.createElement("div");
+            message.className = "ai-message " + type;
+            message.textContent = text;
+
+            aiMessages.appendChild(message);
+            aiMessages.scrollTop = aiMessages.scrollHeight;
+
+            return message;
+        }
+
+        function sendSuggestedQuestion(question) {
+            aiInput.value = question;
+            aiInput.focus();
+        }
+
+        document.querySelectorAll("#ai-window [data-question]").forEach(button => {
+            button.addEventListener("click", () => {
+                sendSuggestedQuestion(button.dataset.question);
+            });
+        });
+
+        aiForm.addEventListener("submit", async event => {
+            event.preventDefault();
+
+            const question = aiInput.value.trim();
+            if (!question) return;
+
+            if (aiWelcome) {
+                aiWelcome.remove();
+            }
+
+            addAIMessage(question, "ai-user");
+            aiInput.value = "";
+
+            // Demo response until the real AI API is connected.
+            addAIMessage(
+                "hi! I'm SkillBridge AI. I can help you with coding, AI, roadmaps, and projects. Ask me anything!",
+            );
+        });
+    </script>
+
+</body>
+</html>

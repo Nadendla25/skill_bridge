@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkillBridge - Profile</title>
+
+    <link rel="stylesheet" href="css/profile.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ==========================================
+         NAVBAR
+    =========================================== -->
+
+    <nav class="navbar">
+
+
+        <!-- LEFT NAVIGATION -->
+
+        <div class="nav-left">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="technology.html">
+                Technology
+            </a>
+
+            <a href="projects.html">
+                Projects
+            </a>
+
+            <a href="roadmaps.html">
+                Roadmap
+            </a>
+
+        </div>
+
+
+
+        <!-- CENTER LOGO -->
+
+        <div class="logo">
+            SkillBridge
+        </div>
+
+
+
+        <!-- RIGHT NAVIGATION -->
+
+        <div class="nav-right">
+
+            <a href="profile.html">
+                Profile
+            </a>
+
+            <a href="#" onclick="logout()">
+                Logout
+            </a>
+
+        </div>
+
+
+    </nav>
+
+
+
+    <!-- ==========================================
+         PROFILE SECTION
+    =========================================== -->
+
+    <section class="profile-page">
+
+
+        <!-- PROFILE HEADER -->
+
+        <div class="profile-header">
+
+            <span class="profile-label">
+                MY PROFILE
+            </span>
+
+            <h1>
+                Your Learning Profile
+            </h1>
+
+            <p>
+                Track your learning progress, completed tests
+                and overall performance on SkillBridge.
+            </p>
+
+        </div>
+
+
+
+        <!-- PROFILE CARD -->
+
+        <div class="profile-card">
+
+
+            <!-- PROFILE TOP -->
+
+            <div class="profile-top">
+
+
+                <!-- AVATAR -->
+
+                <div class="profile-avatar">
+                    M
+                </div>
+
+
+
+                <!-- USER DETAILS -->
+
+                <div class="profile-details">
+
+                    <h2>
+                        Student Name
+                    </h2>
+
+                    <p>
+                        student@example.com
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- PROFILE STATS -->
+
+            <div class="profile-stats">
+
+
+                <!-- COURSE PROGRESS -->
+
+                <div class="profile-stat">
+
+                    <h3>
+                        0%
+                    </h3>
+
+                    <p>
+                        Course Progress
+                    </p>
+
+                </div>
+
+
+
+                <!-- TESTS COMPLETED -->
+
+                <div class="profile-stat">
+
+                    <h3>
+                        0
+                    </h3>
+
+                    <p>
+                        Tests Completed
+                    </p>
+
+                </div>
+
+
+
+                <!-- AVERAGE SCORE -->
+
+                <div class="profile-stat">
+
+                    <h3>
+                        0%
+                    </h3>
+
+                    <p>
+                        Average Score
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- PROFILE ACTIONS -->
+
+        <div class="profile-actions">
+
+            <a href="technology.html"
+               class="profile-action-btn">
+
+                Start Learning
+
+            </a>
+
+
+            <a href="index.html"
+               class="profile-action-btn secondary">
+
+                Back to Home
+
+            </a>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function logout() {
+
+            localStorage.removeItem("currentUser");
+
+            localStorage.removeItem("skillBridgeUser");
+
+            window.location.href = "login.html";
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

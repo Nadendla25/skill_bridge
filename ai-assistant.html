@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkillBridge - AI Learning Assistant</title>
+
+    <link rel="stylesheet" href="css/ai-assistant.css">
+    <script src="js/ai-assistant.js" defer></script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">SkillBridge</a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="technology.html">Technologies</a>
+            <a href="notes.html">Notes</a>
+            <a href="projects.html">Projects</a>
+            <a href="profile.html">Profile</a>
+        </div>
+    </nav>
+
+    <main class="assistant-page">
+
+        <section class="page-heading">
+            <p class="eyebrow">YOUR PERSONAL LEARNING COMPANION</p>
+            <h1>AI Learning Assistant</h1>
+            <p>
+                Ask questions, understand concepts and practise
+                your technology skills with AI.
+            </p>
+        </section>
+
+        <section class="chat-card">
+
+            <div class="chat-header">
+                <div class="assistant-avatar">AI</div>
+
+                <div>
+                    <h2>SkillBridge Assistant</h2>
+                    <p>Ask a question to get started</p>
+                </div>
+            </div>
+
+            <div class="chat-settings">
+                <label for="technology">Choose a technology</label>
+
+                <select id="technology">
+                    <option>General</option>
+                    <option>Python</option>
+                    <option>C</option>
+                    <option>C++</option>
+                    <option>Java</option>
+                    <option>AI</option>
+                    <option>ML</option>
+                    <option>Gen AI</option>
+                    <option>CS</option>
+                    <option>DS</option>
+                    <option>AWS</option>
+                    <option>IoT</option>
+                    <option>SQL</option>
+                    <option>Cyber Security</option>
+                </select>
+            </div>
+
+            <div id="chatMessages" class="chat-messages"
+                 aria-live="polite">
+
+                <div class="message assistant-message">
+                    <div class="message-bubble">
+                        Hi! 👋 I'm your SkillBridge AI Learning Assistant.
+                        <br><br>
+                        Ask me to explain a concept, show a code example
+                        or give you practice questions.
+                    </div>
+                </div>
+
+            </div>
+
+            <form id="chatForm" class="chat-form">
+
+                <textarea
+                    id="userMessage"
+                    placeholder="Ask your learning question..."
+                    rows="2"
+                    maxlength="4000"
+                    required
+                ></textarea>
+
+                <button id="sendButton" type="submit">
+                    Send ↗
+                </button>
+
+            </form>
+
+            <p class="chat-note">
+                AI can make mistakes. Verify important information
+                and test generated code before using it.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        © 2026 SkillBridge. Learn. Practise. Grow.
+    </footer>
+
+</body>
+</html>
+

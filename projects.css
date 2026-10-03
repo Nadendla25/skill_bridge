@@ -1,0 +1,281 @@
+/* =========================================
+   PROJECTS PAGE
+========================================= */
+
+.projects-header {
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+.section-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.projects-header h1 {
+    font-size: 38px;
+    margin: 14px 0;
+}
+
+.projects-header p {
+    color: #666;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   FILTERS
+========================================= */
+
+.project-filters {
+    width: 90%;
+    max-width: 1200px;
+    margin: 10px auto 35px;
+
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+
+    border: 1px solid #ddd;
+    background: white;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.filter-btn:hover {
+    border-color: #111827;
+}
+
+.filter-btn.active {
+    background: #111827;
+    color: white;
+    border-color: #111827;
+}
+
+
+/* =========================================
+   PROJECT CONTAINER
+========================================= */
+
+.projects-container {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+    padding-bottom: 70px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================================
+   PROJECT CARD
+========================================= */
+
+.project-card {
+    background: white;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 16px;
+
+    padding: 28px;
+
+    min-height: 330px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   PROJECT ICON
+========================================= */
+
+.project-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f3f4f6;
+
+    border-radius: 12px;
+
+    font-size: 28px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   TECHNOLOGY NAME
+========================================= */
+
+.technology-name {
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+
+    color: #666;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.project-card h2 {
+    font-size: 21px;
+
+    margin: 10px 0;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.project-card p {
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   PROJECT DETAILS
+========================================= */
+
+.project-details {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: auto;
+
+    margin-bottom: 18px;
+
+    font-size: 13px;
+}
+
+.project-details span:first-child {
+    background: #f1f3f5;
+
+    padding: 6px 10px;
+
+    border-radius: 6px;
+}
+
+.project-details span:last-child {
+    color: #666;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.project-btn {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #111827;
+
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.project-btn:hover {
+    background: #000;
+}
+
+
+/* =========================================
+   HIDDEN PROJECT
+========================================= */
+
+.project-card.hidden {
+    display: none;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-header {
+        padding-top: 40px;
+    }
+
+    .projects-header h1 {
+        font-size: 30px;
+    }
+
+    .project-card {
+        min-height: auto;
+    }
+
+}
